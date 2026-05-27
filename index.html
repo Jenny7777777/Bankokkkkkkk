@@ -11,248 +11,247 @@
             theme: {
                 extend: {
                     colors: {
-                        thaiGold: '#C5A059',
-                        thaiGoldDark: '#9A7B3E',
-                        thaiGreen: '#1C3F24',
-                        thaiGreenLight: '#2D5A37',
-                        thaiWarmBg: '#FAF6F0',
-                        thaiDark: '#2B261F',
-                        thaiClay: '#B85A38'
+                        thaiRed: '#E72A3A',
+                        thaiBlue: '#002F6C',
+                        thaiBlueLight: '#0A4285',
+                        thaiWhite: '#FFFFFF',
+                        thaiSand: '#F5F7FA',
+                        thaiAccent: '#DF1B2E'
                     }
                 }
             }
         }
     </script>
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Noto Sans TC', sans-serif;
-            background-color: #FAF6F0;
-            background-image: radial-gradient(#F3EDE2 1px, transparent 1px);
-            background-size: 24px 24px;
-        }
-        .serif-title {
-            font-family: 'Playfair Display', 'Noto Sans TC', serif;
-        }
-        /* Custom non-AI organic shadows and elegant styles */
-        .premium-border {
-            border: 1px solid rgba(197, 160, 89, 0.3);
-        }
-        .editorial-card {
-            background: #ffffff;
-            border: 1px solid #EFEAE2;
-            box-shadow: 0 4px 20px -2px rgba(43, 38, 31, 0.04);
+            background-color: #F8FAFC;
         }
         .map-link {
             display: inline-flex;
-            items-center: center;
-            color: #1C3F24;
-            border-bottom: 1px dashed #C5A059;
+            align-items: center;
+            color: #002F6C;
+            font-weight: 500;
+            border-bottom: 1px dashed #E72A3A;
             transition: all 0.2s ease;
         }
         .map-link:hover {
-            color: #B85A38;
+            color: #E72A3A;
             border-bottom-style: solid;
-            background-color: rgba(197, 160, 89, 0.08);
+            background-color: rgba(231, 42, 58, 0.05);
         }
+        .flag-stripe-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 6px;
+        }
+        .stripe-red { height: 1px; background-color: #E72A3A; }
+        .stripe-white { height: 1px; background-color: #FFFFFF; }
+        .stripe-blue { height: 2px; background-color: #002F6C; }
     </style>
 </head>
-<body class="text-neutral-800 leading-relaxed min-h-screen antialiased">
+<body class="text-slate-800 leading-relaxed min-h-screen antialiased">
 
-    <!-- Top Luxury Editorial Header -->
-    <header class="max-w-4xl mx-auto px-6 pt-12 pb-8 text-center relative">
-        <div class="inline-flex items-center space-x-2 bg-white premium-border px-4 py-1.5 rounded-full text-xs uppercase tracking-widest text-thaiGoldDark font-medium mb-6 shadow-sm">
-            <span>✨ SAWADDEE KA · BANGKOK GETAWAY</span>
+    <!-- Subtle Flag Top Deco Line -->
+    <div class="flag-stripe-container">
+        <div class="stripe-red"></div>
+        <div class="stripe-white"></div>
+        <div class="stripe-blue"></div>
+        <div class="stripe-white"></div>
+        <div class="stripe-red"></div>
+    </div>
+
+    <!-- Hero Header with Coastal Thailand Vibe -->
+    <header class="max-w-4xl mx-auto px-6 pt-12 pb-6 text-center">
+        <div class="inline-flex items-center space-x-2 bg-white border border-slate-200 px-4 py-1 rounded-full text-xs uppercase tracking-widest text-slate-500 font-medium mb-4 shadow-sm">
+            <span class="text-thaiRed">🔴</span>
+            <span class="text-slate-400">⚪</span>
+            <span class="text-thaiBlue">🔵</span>
+            <span class="pl-1 font-bold text-thaiBlue">BANGKOK GETAWAY · 5D4N</span>
         </div>
-        <h1 class="serif-title text-4xl md:text-6xl font-semibold tracking-tight text-thaiGreen mb-4">
-            曼谷旅遊規劃 <span class="text-thaiGold italic font-normal">0618 ~ 0622</span>
+        <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-thaiBlue mb-3">
+            曼谷旅遊規劃 <span class="text-thaiRed">0618 ~ 0622</span>
         </h1>
-        <div class="h-[1px] w-24 bg-thaiGold mx-auto my-4"></div>
-        <p class="text-sm md:text-base text-neutral-500 max-w-xl mx-auto font-light">
-            專為 <span class="font-medium text-thaiDark">Jenny & Bruce</span> 量身打造的精緻度假動線。融入完美拍照光線、極致舒適中繼站與吃貨避雷指南。
+        <p class="text-sm md:text-base text-slate-500 max-w-xl mx-auto font-light">
+            專為 <span class="font-semibold text-thaiBlue">Jenny & Bruce</span> 打造的互動式度假行程。完美融合拍照光線、極致舒適中繼站與熱門景點導航。
         </p>
     </header>
 
-    <!-- Quick Stats Quick-Links Board -->
-    <div class="max-w-4xl mx-auto px-4 mb-10">
-        <div class="bg-white rounded-xl border border-[#EFEAE2] p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 shadow-sm relative overflow-hidden">
-            <div class="absolute top-0 left-0 w-full h-[3px] bg-thaiGold"></div>
+    <!-- Navigation & Quick Stats Dashboard -->
+    <div class="max-w-4xl mx-auto px-4 mb-8">
+        <div class="bg-white rounded-xl border border-slate-200/80 p-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 shadow-sm">
             <div class="space-y-1">
-                <p class="text-xs uppercase tracking-wider text-neutral-400 font-medium">去程班機 (BKK)</p>
-                <p class="text-sm font-semibold text-thaiGreen">6/18 (四) 22:40 抵達</p>
-                <a href="https://maps.google.com/?q=Suvarnabhumi+Airport+BKK" target="_blank" class="text-xs map-link">📍 蘇凡納布機場 (BKK)</a>
+                <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">去程班機 (BKK)</p>
+                <p class="text-sm font-bold text-slate-800">6/18 (四) 22:40 抵達</p>
+                <a href="https://maps.google.com/?q=Suvarnabhumi+Airport" target="_blank" class="text-xs map-link">📍 蘇凡納布機場 (BKK)</a>
             </div>
-            <div class="space-y-1 sm:border-l sm:pl-6 border-neutral-100">
-                <p class="text-xs uppercase tracking-wider text-neutral-400 font-medium">回程班機 (BKK)</p>
-                <p class="text-sm font-semibold text-thaiGreen">6/22 (一) 09:10 起飛</p>
-                <a href="https://maps.google.com/?q=Suvarnabhumi+Airport+BKK" target="_blank" class="text-xs map-link">📍 蘇凡納布機場 (BKK)</a>
+            <div class="space-y-1 sm:border-l sm:pl-6 border-slate-100">
+                <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">回程班機 (BKK)</p>
+                <p class="text-sm font-bold text-slate-800">6/22 (一) 09:10 起飛</p>
+                <a href="https://maps.google.com/?q=Suvarnabhumi+Airport" target="_blank" class="text-xs map-link">📍 蘇凡納布機場 (BKK)</a>
             </div>
-            <div class="space-y-1 md:border-l md:pl-6 border-neutral-100">
-                <p class="text-xs uppercase tracking-wider text-neutral-400 font-medium">專屬住宿酒店</p>
-                <p class="text-sm font-semibold text-thaiDark truncate" title="Rembrandt Hotel Bangkok">Rembrandt Hotel</p>
-                <a href="https://maps.google.com/?q=Rembrandt+Hotel+Bangkok+Sukhumvit" target="_blank" class="text-xs map-link">📍 Sukhumvit Soi 20</a>
+            <div class="space-y-1 md:border-l md:pl-6 border-slate-100">
+                <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">下榻酒店</p>
+                <p class="text-sm font-bold text-slate-800 truncate" title="Rembrandt Hotel Bangkok">Rembrandt Hotel</p>
+                <a href="https://maps.google.com/?q=Rembrandt+Hotel+Bangkok" target="_blank" class="text-xs map-link">📍 Sukhumvit Soi 20</a>
             </div>
-            <div class="space-y-1 md:border-l md:pl-6 border-neutral-100">
-                <p class="text-xs uppercase tracking-wider text-neutral-400 font-medium">核心鄰近捷運</p>
-                <p class="text-sm font-semibold text-neutral-600">BTS Asok / MRT</p>
-                <a href="https://maps.google.com/?q=BTS+Asok+Station" target="_blank" class="text-xs map-link">📍 Asok 阿索克站</a>
+            <div class="space-y-1 md:border-l md:pl-6 border-slate-100">
+                <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">核心捷運樞紐</p>
+                <p class="text-sm font-bold text-slate-800">BTS Asok / MRT</p>
+                <a href="https://maps.google.com/?q=Asok+BTS+Station" target="_blank" class="text-xs map-link">📍 Asok 阿索克站</a>
             </div>
         </div>
     </div>
 
     <!-- Main Content Container -->
-    <main class="max-w-4xl mx-auto px-4 pb-16 space-y-10">
+    <main class="max-w-4xl mx-auto px-4 pb-16 space-y-8">
 
-        <!-- Section 1: Editorial Precautions Dashboard -->
-        <section class="editorial-card rounded-xl p-6 md:p-8 space-y-6 relative">
-            <div class="flex items-center space-x-3 border-b border-neutral-100 pb-4">
-                <span class="text-xl text-thaiGold">🌿</span>
-                <h2 class="serif-title text-xl font-semibold tracking-wide text-thaiDark">行前關鍵避雷指南 & 掌鏡秘訣</h2>
+        <!-- Section 1: Practical Precautions Dashboard -->
+        <section class="bg-white rounded-xl border border-slate-200/80 p-6 shadow-sm space-y-4">
+            <div class="flex items-center space-x-2 border-b border-slate-100 pb-3">
+                <span class="text-thaiRed text-lg">💡</span>
+                <h2 class="font-bold text-base md:text-lg text-thaiBlue tracking-wide">行前重要避雷指南 & 掌鏡秘訣</h2>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
-                <div class="space-y-3">
-                    <h3 class="font-bold text-thaiClay flex items-center tracking-wide">
-                        <span class="w-1.5 h-1.5 rounded-full bg-thaiClay mr-2"></span> 交通調度最高準則
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+                <div class="space-y-2">
+                    <h3 class="font-bold text-thaiBlue flex items-center">
+                        <span class="w-1.5 h-1.5 bg-thaiRed rounded-full mr-2"></span> 交通調度最高準則
                     </h3>
-                    <ul class="list-none pl-0 space-y-2 text-neutral-600 font-light">
-                        <li class="relative pl-4"><span class="absolute left-0 text-thaiGold">▪</span><strong>絕不路邊隨機攔車：</strong> 路上不跳表（By Meter）的計程車極易踩雷，請全程使用 <span class="text-thaiGreen font-medium underline decoration-thaiGold">Grab 或 Bolt</span> 叫車。</li>
-                        <li class="relative pl-4"><span class="absolute left-0 text-thaiGold">▪</span><strong>黃金晚尖峰避堵：</strong> 每天 <span class="bg-amber-100/70 text-amber-900 px-1.5 py-0.5 rounded font-medium">17:00 - 20:00</span> 的 <a href="https://maps.google.com/?q=Asok+Intersection" target="_blank" class="map-link font-medium">Asok 區路段</a> 處於極度癱瘓狀態，此時段出門請絕對改搭 <strong>BTS 捷運</strong> 或 <strong>MRT 地鐵</strong>。</li>
+                    <ul class="list-disc pl-5 space-y-1 text-slate-600 font-light">
+                        <li><strong>不隨機攔車：</strong> 路上不跳表（By Meter）的計程車極易踩雷，請全程使用 <span class="text-thaiBlue font-medium underline">Grab 或 Bolt</span> 叫車。</li>
+                        <li><strong>晚間塞車時段：</strong> 每天 <span class="bg-red-50 text-thaiRed px-1 rounded font-medium">17:00 - 20:00</span> 的 <a href="https://maps.google.com/?q=Asok" target="_blank" class="map-link">Asok 區路段</a> 嚴重癱瘓，此時出門請改搭 <strong>BTS 捷運</strong> 或 <strong>MRT 地鐵</strong>。</li>
                     </ul>
                 </div>
                 
-                <div class="space-y-3">
-                    <h3 class="font-bold text-thaiGreenLight flex items-center tracking-wide">
-                        <span class="w-1.5 h-1.5 rounded-full bg-thaiGreenLight mr-2"></span> 完美掌鏡與參拜禮儀
+                <div class="space-y-2">
+                    <h3 class="font-bold text-thaiBlue flex items-center">
+                        <span class="w-1.5 h-1.5 bg-thaiRed rounded-full mr-2"></span> 拍照撇步與參拜禮儀
                     </h3>
-                    <ul class="list-none pl-0 space-y-2 text-neutral-600 font-light">
-                        <li class="relative pl-4"><span class="absolute left-0 text-thaiGold">▪</span><strong>鄭王廟黃金拍照光線：</strong> 務必預約在 <span class="text-thaiClay font-medium">15:00 - 15:30 左右</span> 開始拍攝，此時斜射光線最為柔和、最顯白。</li>
-                        <li class="relative pl-4"><span class="absolute left-0 text-thaiGold">▪</span><strong>體貼升級：</strong> 隨身為女友拿好洋傘、在 7-11 提早備妥冰鎮水，心情美照片自然絕美！</li>
-                        <li class="relative pl-4"><span class="absolute left-0 text-thaiGold">▪</span><strong>四面佛禁忌：</strong> 參拜時不可著暴露服飾（如細肩帶、大露背）。願望達成後切記回來還願。</li>
+                    <ul class="list-disc pl-5 space-y-1 text-slate-600 font-light">
+                        <li><strong>鄭王廟黃金拍照光線：</strong> 推薦預約在 <span class="text-thaiRed font-medium">15:00 左右</span> 拍攝，此時斜光最美、最顯白。</li>
+                        <li><strong>貼心準備：</strong> 隨身幫女友拿好陽傘、在 7-11 提早買好冰鎮水，照片自然漂亮！</li>
+                        <li><strong>四面佛禁忌：</strong> 參拜時不可穿著暴露服飾（如細肩帶、大露背）。願望達成後一定要記得回來還願。</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="mt-4 bg-rose-50/60 p-4 rounded-lg border border-rose-100/70 text-sm text-neutral-700 flex items-start space-x-3">
-                <span class="text-rose-600 mt-0.5">⚠️</span>
+            <div class="mt-2 bg-slate-50 p-4 rounded-lg border border-slate-200/60 text-sm text-slate-700 flex items-start space-x-3">
+                <span class="text-thaiRed font-bold mt-0.5">⚠️</span>
                 <p class="font-light">
-                    <strong class="text-rose-800 font-medium">最後一晚退房重要鐵律：</strong>
-                    6/22 清晨 <span class="font-medium underline text-rose-700">05:40 必須自飯店出發前往機場</span>。由於時間極早，請務必於 6/21 晚上提前向飯店櫃檯預約好排班計程車，或確認好 Grab 預約功能，確保按時登機。
+                    <strong class="text-thaiBlue font-bold">最後一晚退房鐵律：</strong>
+                    6/22 清晨 <span class="font-semibold underline text-thaiRed">05:40 必須自飯店出發前往機場</span>。時間極早，請務必於 6/21 晚上提前向飯店櫃檯預約妥計程車，或確認好 Grab 預約功能。
                 </p>
             </div>
         </section>
 
         <!-- Section 2: Interactive Smart Packing Checklist -->
-        <section class="editorial-card rounded-xl p-6 md:p-8 space-y-6">
-            <div class="flex items-center space-x-3 border-b border-neutral-100 pb-4">
-                <span class="text-xl text-thaiGold">💼</span>
-                <h2 class="serif-title text-xl font-semibold tracking-wide text-thaiDark">出發前行李聰明檢核表</h2>
+        <section class="bg-white rounded-xl border border-slate-200/80 p-6 shadow-sm space-y-4">
+            <div class="flex items-center space-x-2 border-b border-slate-100 pb-3">
+                <span class="text-thaiBlue text-lg">🎒</span>
+                <h2 class="font-bold text-base md:text-lg text-thaiBlue tracking-wide">出發前行李聰明檢核表</h2>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
-                <!-- Checklist Col 1 -->
-                <div class="space-y-4">
-                    <h3 class="font-bold text-thaiGreen border-b border-neutral-100 pb-1.5 flex items-center">
-                        <span class="mr-2 text-xs text-thaiGold">01 /</span> 文件與數位工具
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+                <!-- Col 1 -->
+                <div class="space-y-2">
+                    <h3 class="font-bold text-slate-700 border-b border-slate-100 pb-1 flex items-center">
+                        <span class="mr-1.5 text-thaiRed font-bold">▪</span> 1. 必備文件與 APP
                     </h3>
-                    <div class="space-y-3 font-light">
-                        <label class="flex items-start space-x-3 cursor-pointer group">
-                            <input type="checkbox" class="w-4 h-4 mt-0.5 rounded border-neutral-300 text-thaiGold focus:ring-thaiGold accent-thaiGold">
-                            <span class="text-neutral-600 group-hover:text-neutral-900 transition"><strong>護照正本：</strong>以及手機內拍照備份存檔。</span>
+                    <div class="space-y-2 font-light">
+                        <label class="flex items-start space-x-3 cursor-pointer p-1 hover:bg-slate-50 rounded">
+                            <input type="checkbox" class="w-4 h-4 mt-0.5 rounded border-slate-300 text-thaiBlue focus:ring-thaiBlue accent-thaiBlue">
+                            <span class="text-slate-600"><strong>護照：</strong>正本及影本（或手機拍照存檔）。</span>
                         </label>
-                        <label class="flex items-start space-x-3 cursor-pointer group">
-                            <input type="checkbox" class="w-4 h-4 mt-0.5 rounded border-neutral-300 text-thaiGold focus:ring-thaiGold accent-thaiGold">
-                            <span class="text-neutral-600 group-hover:text-neutral-900 transition"><strong>5G 上網 eSIM/SIM卡：</strong>建議提前在 Klook/KKday 訂購妥當。</span>
+                        <label class="flex items-start space-x-3 cursor-pointer p-1 hover:bg-slate-50 rounded">
+                            <input type="checkbox" class="w-4 h-4 mt-0.5 rounded border-slate-300 text-thaiBlue focus:ring-thaiBlue accent-thaiBlue">
+                            <span class="text-slate-600"><strong>網路：</strong>泰國 5G SIM 卡或 eSIM（提前在 Klook/KKday 購妥）。</span>
                         </label>
-                        <label class="flex items-start space-x-3 cursor-pointer group">
-                            <input type="checkbox" class="w-4 h-4 mt-0.5 rounded border-neutral-300 text-thaiGold focus:ring-thaiGold accent-thaiGold">
-                            <span class="text-neutral-600 group-hover:text-neutral-900 transition"><strong>叫車 APP：</strong>手機確認綁定並註冊妥 Grab 與 Bolt。</span>
+                        <label class="flex items-start space-x-3 cursor-pointer p-1 hover:bg-slate-50 rounded">
+                            <input type="checkbox" class="w-4 h-4 mt-0.5 rounded border-slate-300 text-thaiBlue focus:ring-thaiBlue accent-thaiBlue">
+                            <span class="text-slate-600"><strong>叫車軟體：</strong>手機完成註冊 Grab 與 Bolt APP。</span>
                         </label>
-                        <label class="flex items-start space-x-3 cursor-pointer group">
-                            <input type="checkbox" class="w-4 h-4 mt-0.5 rounded border-neutral-300 text-thaiGold focus:ring-thaiGold accent-thaiGold">
-                            <span class="text-neutral-600 group-hover:text-neutral-900 transition"><strong>Google 翻譯：</strong>下載離線泰文，開啟相機即時掃描菜單功能。</span>
+                        <label class="flex items-start space-x-3 cursor-pointer p-1 hover:bg-slate-50 rounded">
+                            <input type="checkbox" class="w-4 h-4 mt-0.5 rounded border-slate-300 text-thaiBlue focus:ring-thaiBlue accent-thaiBlue">
+                            <span class="text-slate-600"><strong>Maps & 翻譯：</strong>Google Maps 與 Google 翻譯（開啟相機功能）。</span>
                         </label>
                     </div>
                 </div>
 
-                <!-- Checklist Col 2 -->
-                <div class="space-y-4">
-                    <h3 class="font-bold text-thaiGreen border-b border-neutral-100 pb-1.5 flex items-center">
-                        <span class="mr-2 text-xs text-thaiGold">02 /</span> 穿搭服飾與備用藥品
+                <!-- Col 2 -->
+                <div class="space-y-2">
+                    <h3 class="font-bold text-slate-700 border-b border-slate-100 pb-1 flex items-center">
+                        <span class="mr-1.5 text-thaiRed font-bold">▪</span> 2. 隨身行李與藥物
                     </h3>
-                    <div class="space-y-3 font-light">
-                        <label class="flex items-start space-x-3 cursor-pointer group">
-                            <input type="checkbox" class="w-4 h-4 mt-0.5 rounded border-neutral-300 text-thaiGold focus:ring-thaiGold accent-thaiGold">
-                            <span class="text-neutral-600 group-hover:text-neutral-900 transition"><strong>泰銖現金：</strong>備妥約 10,000-15,000 泰銖，多數街頭小吃不接受刷卡。</span>
+                    <div class="space-y-2 font-light">
+                        <label class="flex items-start space-x-3 cursor-pointer p-1 hover:bg-slate-50 rounded">
+                            <input type="checkbox" class="w-4 h-4 mt-0.5 rounded border-slate-300 text-thaiBlue focus:ring-thaiBlue accent-thaiBlue">
+                            <span class="text-slate-600"><strong>泰銖現金：</strong>準備約 10,000-15,000 現金（路邊攤多不收卡）。</span>
                         </label>
-                        <label class="flex items-start space-x-3 cursor-pointer group">
-                            <input type="checkbox" class="w-4 h-4 mt-0.5 rounded border-neutral-300 text-thaiGold focus:ring-thaiGold accent-thaiGold">
-                            <span class="text-neutral-600 group-hover:text-neutral-900 transition"><strong>長袖薄外套：</strong>抵擋各大百貨內超強冷氣。</span>
+                        <label class="flex items-start space-x-3 cursor-pointer p-1 hover:bg-slate-50 rounded">
+                            <input type="checkbox" class="w-4 h-4 mt-0.5 rounded border-slate-300 text-thaiBlue focus:ring-thaiBlue accent-thaiBlue">
+                            <span class="text-slate-600"><strong>服裝：</strong>長袖薄外套（百貨冷氣強）、過膝褲/裙（進寺廟用）。</span>
                         </label>
-                        <label class="flex items-start space-x-3 cursor-pointer group">
-                            <input type="checkbox" class="w-4 h-4 mt-0.5 rounded border-neutral-300 text-thaiGold focus:ring-thaiGold accent-thaiGold">
-                            <span class="text-neutral-600 group-hover:text-neutral-900 transition"><strong>過膝長褲或長裙：</strong>供進入佛寺、古蹟參觀時換穿。</span>
+                        <label class="flex items-start space-x-3 cursor-pointer p-1 hover:bg-slate-50 rounded">
+                            <input type="checkbox" class="w-4 h-4 mt-0.5 rounded border-slate-300 text-thaiBlue focus:ring-thaiBlue accent-thaiBlue">
+                            <span class="text-slate-600"><strong>NuBra/無肩帶內衣：</strong>女友穿華麗泰服必備神器。</span>
                         </label>
-                        <label class="flex items-start space-x-3 cursor-pointer group">
-                            <input type="checkbox" class="w-4 h-4 mt-0.5 rounded border-neutral-300 text-thaiGold focus:ring-thaiGold accent-thaiGold">
-                            <span class="text-neutral-600 group-hover:text-neutral-900 transition"><strong>隱形內衣 / NuBra：</strong>泰服網美照完美呈現的不著痕跡神器。</span>
-                        </label>
-                        <label class="flex items-start space-x-3 cursor-pointer group">
-                            <input type="checkbox" class="w-4 h-4 mt-0.5 rounded border-neutral-300 text-thaiGold focus:ring-thaiGold accent-thaiGold">
-                            <span class="text-neutral-600 group-hover:text-neutral-900 transition"><strong>常備藥與防蚊液：</strong>止瀉、止痛藥。Soffell 防蚊液至當地 7-11 購入即可。</span>
+                        <label class="flex items-start space-x-3 cursor-pointer p-1 hover:bg-slate-50 rounded">
+                            <input type="checkbox" class="w-4 h-4 mt-0.5 rounded border-slate-300 text-thaiBlue focus:ring-thaiBlue accent-thaiBlue">
+                            <span class="text-slate-600"><strong>藥品：</strong>止瀉、胃藥、止痛藥、Soffell 防蚊液（到曼谷 7-11 買即可）。</span>
                         </label>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section 3: Premium Editorial Itinerary (Less AI, More Magazine Feel) -->
-        <section class="space-y-6">
-            <div class="flex items-center justify-between border-b border-neutral-200 pb-2">
-                <h2 class="serif-title text-2xl font-semibold text-thaiGreen tracking-tight">每日詳細度假動線</h2>
-                <span class="text-xs font-light text-neutral-400">點擊標題即可輕鬆展開或收合細節</span>
+        <!-- Section 3: Interactive Itinerary -->
+        <section class="space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+                <h2 class="font-bold text-lg text-thaiBlue tracking-wide">🗓 每日詳細度假動線</h2>
+                <span class="text-xs text-slate-400 font-light">點擊標題即可輕鬆展開或收合細節</span>
             </div>
 
             <!-- Day 1 -->
-            <div class="bg-white rounded-lg border border-[#EFEAE2] overflow-hidden transition-all duration-300">
-                <button onclick="toggleDay('day1')" class="w-full text-left p-6 flex items-center justify-between hover:bg-[#FAF6F0]/50 transition">
+            <div class="bg-white rounded-xl border border-slate-200/80 overflow-hidden shadow-sm">
+                <button onclick="toggleDay('day1')" class="w-full text-left p-5 flex items-center justify-between hover:bg-slate-50 transition">
                     <div class="flex items-center space-x-4">
-                        <div class="text-center bg-thaiGreen text-white px-3 py-1.5 rounded">
-                            <span class="block text-[10px] uppercase font-bold tracking-widest leading-none">Day</span>
-                            <span class="serif-title text-lg font-bold leading-none">01</span>
+                        <div class="bg-thaiBlue text-white font-bold px-3 py-1 rounded text-sm tracking-wider">
+                            DAY 1
                         </div>
                         <div>
-                            <h3 class="font-bold text-thaiDark text-base md:text-lg">6/18 (四) 航向曼谷 → 迅速 Check-in 舒壓泡澡</h3>
-                            <p class="text-xs text-neutral-400 mt-0.5">航點：台北 ✈ <a href="https://maps.google.com/?q=Suvarnabhumi+Airport+BKK" target="_blank" onclick="event.stopPropagation();" class="map-link font-medium">蘇凡納布國際機場 (BKK)</a></p>
+                            <h3 class="font-bold text-slate-800 text-base">6/18 (四) 深夜抵達曼谷 → 迅速 Check-in 舒壓泡澡</h3>
+                            <p class="text-xs text-slate-400 mt-0.5">航點：台北 ✈ <a href="https://maps.google.com/?q=Suvarnabhumi+Airport" target="_blank" onclick="event.stopPropagation();" class="map-link">蘇凡納布國際機場 (BKK)</a></p>
                         </div>
                     </div>
-                    <span id="arrow-day1" class="text-thaiGold text-sm transition-transform transform rotate-180">▲</span>
+                    <span id="arrow-day1" class="text-thaiBlue font-bold text-sm transition-transform transform rotate-180">▲</span>
                 </button>
-                <div id="content-day1" class="border-t border-neutral-100 bg-[#FAF6F0]/20 p-6 space-y-4 text-sm">
-                    <div class="relative pl-6 border-l border-thaiGold/30 space-y-5">
+                <div id="content-day1" class="border-t border-slate-100 bg-slate-50/40 p-5 space-y-4 text-sm">
+                    <div class="relative pl-5 border-l-2 border-slate-200 space-y-4">
                         <div>
-                            <span class="absolute -left-[4.5px] top-1.5 w-2 h-2 rounded-full bg-thaiGold"></span>
-                            <span class="text-xs font-bold text-thaiClay bg-orange-50 px-2 py-0.5 rounded">22:40</span>
-                            <p class="font-semibold text-neutral-800 mt-1">抵達曼谷 <a href="https://maps.google.com/?q=Suvarnabhumi+Airport+BKK" target="_blank" class="map-link">蘇凡納布國際機場 (BKK)</a></p>
-                            <p class="text-xs text-neutral-500 font-light mt-0.5">辦理入境通關，提取行李，正式開啟五天假期。</p>
+                            <span class="absolute -left-[5px] top-1.5 w-2 h-2 rounded-full bg-thaiRed"></span>
+                            <span class="text-xs font-bold text-thaiRed bg-red-50 px-2 py-0.5 rounded">22:40 - 23:40</span>
+                            <p class="font-bold text-slate-800 mt-1">班機深夜抵達 <a href="https://maps.google.com/?q=Suvarnabhumi+Airport" target="_blank" class="map-link">BKK 國際機場</a></p>
+                            <p class="text-xs text-slate-500 mt-0.5 font-light">順利通關程序並提取行李。</p>
                         </div>
                         <div>
-                            <span class="absolute -left-[4.5px] top-1.5 w-2 h-2 rounded-full bg-thaiGold"></span>
-                            <span class="text-xs font-bold text-thaiGreen bg-emerald-50 px-2 py-0.5 rounded">23:40 - 00:30</span>
-                            <p class="font-semibold text-neutral-800 mt-1">【深夜接駁策略】</p>
-                            <p class="text-xs text-neutral-600 font-light mt-1">
-                                此時段機場快線已停駛。請前往一樓排班計程車區 (Taxi Stand) 服務台抽卡上車，或直接開啟 Grab/Bolt App 叫車直奔市區飯店。深夜全線暢通無阻，約 35 分鐘即可抵達。
+                            <span class="absolute -left-[5px] top-1.5 w-2 h-2 rounded-full bg-thaiBlue"></span>
+                            <span class="text-xs font-bold text-thaiBlue bg-blue-50 px-2 py-0.5 rounded">23:40 - 00:30</span>
+                            <p class="font-bold text-slate-800 mt-1">【交通教戰】直奔市區</p>
+                            <p class="text-xs text-slate-600 font-light mt-0.5">
+                                深夜已無捷運及機場快線。請直接至機場一樓排班計程車處 (Taxi Stand) 服務台排隊，或使用 Grab/Bolt APP 叫車。深夜一路通暢不塞車，約 35-40 分鐘即可安全抵達。
                             </p>
                         </div>
                         <div>
-                            <span class="absolute -left-[4.5px] top-1.5 w-2 h-2 rounded-full bg-thaiGold"></span>
-                            <span class="text-xs font-bold text-neutral-500 bg-neutral-100 px-2 py-0.5 rounded">00:45</span>
-                            <p class="font-semibold text-neutral-800 mt-1">下榻 <a href="https://maps.google.com/?q=Rembrandt+Hotel+Bangkok+Sukhumvit" target="_blank" class="map-link">Rembrandt Hotel Bangkok</a> 辦理入住</p>
-                            <p class="text-xs text-neutral-600 font-light mt-1.5 bg-white p-3 rounded border border-neutral-100">
-                                🥣 <strong>吃貨補給提示：</strong> 巷口步行 2 分鐘即有 <a href="https://maps.google.com/?q=7-Eleven+Sukhumvit" target="_blank" class="map-link">7-Eleven 超商</a>，極力推薦買份熱壓吐司與限定燕窩作為抵曼谷的首晚宵夜。回房放滿熱水，在寬敞浴缸內泡個舒服的熱水澡，徹底釋放飛行疲勞。
+                            <span class="absolute -left-[5px] top-1.5 w-2 h-2 rounded-full bg-thaiBlue"></span>
+                            <span class="text-xs font-bold text-slate-500 bg-slate-100 px-2 py-0.5 rounded">00:45</span>
+                            <p class="font-bold text-slate-800 mt-1">下榻飯店 <a href="https://maps.google.com/?q=Rembrandt+Hotel+Bangkok" target="_blank" class="map-link">Rembrandt Hotel Bangkok</a></p>
+                            <p class="text-xs text-slate-600 font-light mt-1 bg-white p-3 rounded border border-slate-200/60">
+                                🥣 <strong>吃貨宵夜首選：</strong> 飯店附近的 7-11 超商非常好買，強力推薦購買熱壓吐司與燕窩當宵夜。回房立刻放熱水，在大浴缸內舒服泡個熱水澡，好好補眠迎接明天的硬仗！
                             </p>
                         </div>
                     </div>
@@ -260,55 +259,59 @@
             </div>
 
             <!-- Day 2 -->
-            <div class="bg-white rounded-lg border border-[#EFEAE2] overflow-hidden transition-all duration-300">
-                <button onclick="toggleDay('day2')" class="w-full text-left p-6 flex items-center justify-between hover:bg-[#FAF6F0]/50 transition">
+            <div class="bg-white rounded-xl border border-slate-200/80 overflow-hidden shadow-sm">
+                <button onclick="toggleDay('day2')" class="w-full text-left p-5 flex items-center justify-between hover:bg-slate-50 transition">
                     <div class="flex items-center space-x-4">
-                        <div class="text-center bg-thaiGreen text-white px-3 py-1.5 rounded">
-                            <span class="block text-[10px] uppercase font-bold tracking-widest leading-none">Day</span>
-                            <span class="serif-title text-lg font-bold leading-none">02</span>
+                        <div class="bg-thaiBlue text-white font-bold px-3 py-1 rounded text-sm tracking-wider">
+                            DAY 2
                         </div>
                         <div>
-                            <h3 class="font-bold text-thaiDark text-base md:text-lg">6/19 (五) 核心大片日：古蹟泰服體驗 → 唐人街大排檔海鮮</h3>
-                            <p class="text-xs text-neutral-400 mt-0.5">景點：<a href="https://maps.google.com/?q=Wat+Arun" target="_blank" onclick="event.stopPropagation();" class="map-link font-medium">鄭王廟</a>、<a href="https://maps.google.com/?q=Chinatown+Bangkok" target="_blank" onclick="event.stopPropagation();" class="map-link font-medium">唐人街 (Yaowarat)</a></p>
+                            <h3 class="font-bold text-slate-800 text-base">6/19 (五) 最核心行程！經典泰服鄭王廟 → 唐人街夜間海鮮</h3>
+                            <p class="text-xs text-slate-400 mt-0.5">地標：<a href="https://maps.google.com/?q=Wat+Arun" target="_blank" onclick="event.stopPropagation();" class="map-link">鄭王廟</a>、<a href="https://maps.google.com/?q=Yaowarat+Road" target="_blank" onclick="event.stopPropagation();" class="map-link">唐人街</a></p>
                         </div>
                     </div>
-                    <span id="arrow-day2" class="text-thaiGold text-sm transition-transform transform">▼</span>
+                    <span id="arrow-day2" class="text-thaiBlue font-bold text-sm transition-transform transform">▼</span>
                 </button>
-                <div id="content-day2" class="hidden border-t border-neutral-100 bg-[#FAF6F0]/20 p-6 space-y-4 text-sm">
-                    <div class="relative pl-6 border-l border-thaiGold/30 space-y-5">
+                <div id="content-day2" class="hidden border-t border-slate-100 bg-slate-50/40 p-5 space-y-4 text-sm">
+                    <div class="relative pl-5 border-l-2 border-slate-200 space-y-4">
                         <div>
-                            <span class="absolute -left-[4.5px] top-1.5 w-2 h-2 rounded-full bg-thaiGold"></span>
-                            <span class="text-xs font-bold text-neutral-500 bg-neutral-100 px-2 py-0.5 rounded">10:30 - 12:00</span>
-                            <p class="font-semibold text-neutral-800 mt-1">慵懶晨醒與早午餐</p>
-                            <p class="text-xs text-neutral-600 font-light">
-                                飽睡後起床，慢行 5-7 分鐘至 <a href="https://maps.google.com/?q=Terminal+21+Asok" target="_blank" class="map-link">Terminal 21 Asok</a> 購物中心或周邊文青咖啡廳享用豐盛早午餐。
+                            <span class="absolute -left-[5px] top-1.5 w-2 h-2 rounded-full bg-slate-300"></span>
+                            <span class="text-xs font-bold text-slate-500 bg-slate-100 px-2 py-0.5 rounded">10:30 - 12:00</span>
+                            <p class="font-bold text-slate-800 mt-1">自然醒與享用早午餐</p>
+                            <p class="text-xs text-slate-600 font-light mt-0.5">
+                                走路 5-7 分鐘到 BTS Asok 站旁的 <a href="https://maps.google.com/?q=Terminal+21+Asok" target="_blank" class="map-link">Terminal 21</a> 百貨或周邊風格咖啡廳吃早午餐，慵懶開啟一天。
                             </p>
                         </div>
                         <div>
-                            <span class="absolute -left-[4.5px] top-1.5 w-2 h-2 rounded-full bg-thaiGold"></span>
-                            <span class="text-xs font-bold text-thaiGreen bg-emerald-50 px-2 py-0.5 rounded">12:30 - 14:00</span>
-                            <p class="font-semibold text-neutral-800 mt-1">浪漫昭披耶河水路動線</p>
-                            <p class="text-xs text-neutral-600 font-light">
-                                搭乘 BTS 捷運至 <a href="https://maps.google.com/?q=Saphan+Taksin+Station" target="_blank" class="map-link">Saphan Taksin 站</a>，由 2 號出口前往 <a href="https://maps.google.com/?q=Sathorn+Pier" target="_blank" class="map-link">中央碼頭 (Sathorn Pier)</a>。搭乘觀光接駁船（藍船或橘船）吹海風，一路飽覽河岸地標至鄭王廟碼頭。
+                            <span class="absolute -left-[5px] top-1.5 w-2 h-2 rounded-full bg-thaiBlue"></span>
+                            <span class="text-xs font-bold text-thaiBlue bg-blue-50 px-2 py-0.5 rounded">12:30 - 14:00</span>
+                            <p class="font-bold text-slate-800 mt-1">不塞車完美水路動線</p>
+                            <p class="text-xs text-slate-600 font-light mt-0.5">
+                                從 BTS Asok 站搭捷運到 <a href="https://maps.google.com/?q=Saphan+Taksin+BTS+Station" target="_blank" class="map-link">Saphan Taksin 站</a>，2 號出口出站。直接在中央碼頭搭乘昭披耶河觀光船吹海風，看風景直達鄭王廟碼頭。
                             </p>
                         </div>
                         <div>
-                            <span class="absolute -left-[4.5px] top-1.5 w-2 h-2 rounded-full bg-thaiGold"></span>
-                            <span class="text-xs font-bold text-thaiClay bg-orange-50 px-2 py-0.5 rounded">14:00 - 17:00</span>
-                            <p class="font-semibold text-neutral-800 mt-1">⭐ 華麗古典泰服大片拍攝 · <a href="https://maps.google.com/?q=Wat+Arun" target="_blank" class="map-link">鄭王廟 (Wat Arun)</a></p>
-                            <p class="text-xs text-neutral-600 font-light mt-1">
-                                碼頭旁有多家專業泰服租賃店（全套妝髮服飾僅約 THB 200-300）。<strong>下午三點半後的陽光最為顯白細緻</strong>。在純白繁複的佛塔前為女友拍攝質感大片。拍完後於廟旁買顆現剖鮮椰子汁消暑。
+                            <span class="absolute -left-[5px] top-1.5 w-2 h-2 rounded-full bg-thaiRed"></span>
+                            <span class="text-xs font-bold text-thaiRed bg-red-50 px-2 py-0.5 rounded">14:00 - 17:00</span>
+                            <p class="font-bold text-slate-800 mt-1">⭐ 【<a href="https://maps.google.com/?q=Wat+Arun" target="_blank" class="map-link">鄭王廟 (Wat Arun)</a> 泰服寫真體驗】</p>
+                            <p class="text-xs text-slate-600 font-light mt-1">
+                                碼頭周邊有非常多泰服出租店（費用約 THB 200-300）。<strong>下午 3 點半過後的斜射陽光最美、最顯白</strong>。穿著泰服在白色佛塔前幫女友拍美照，拍完後在廟旁買顆現剖椰子水解暑。
                             </p>
                         </div>
                         <div>
-                            <span class="absolute -left-[4.5px] top-1.5 w-2 h-2 rounded-full bg-thaiGold"></span>
-                            <span class="text-xs font-bold text-thaiGreen bg-emerald-50 px-2 py-0.5 rounded">17:30 - 21:00</span>
-                            <p class="font-semibold text-neutral-800 mt-1">霓虹魔幻感 · <a href="https://maps.google.com/?q=Chinatown+Bangkok" target="_blank" class="map-link">唐人街 (Yaowarat Road)</a> 街頭爆吃</p>
-                            <p class="text-xs text-neutral-600 font-light mt-1">
-                                搭乘交通船至 <a href="https://maps.google.com/?q=Ratchawong+Pier" target="_blank" class="map-link">Ratchawong 碼頭</a>，步行或搭乘特色嘟嘟車至唐人街。
+                            <span class="absolute -left-[5px] top-1.5 w-2 h-2 rounded-full bg-thaiBlue"></span>
+                            <span class="text-xs font-bold text-thaiBlue bg-blue-50 px-2 py-0.5 rounded">17:30 - 21:00</span>
+                            <p class="font-bold text-slate-800 mt-1"><a href="https://maps.google.com/?q=Yaowarat+Road" target="_blank" class="map-link">唐人街 (Yaowarat)</a> 街頭小吃聖地</p>
+                            <p class="text-xs text-slate-600 font-light mt-1 bg-white p-3 rounded border border-slate-200/60">
+                                🦐 <strong>爆吃重點：</strong> 入夜後的唐人街霓虹燈亮起，超級有香港復古感！直接鎖定 【T&K Seafood】 坐在路邊大排檔吃炭烤大蝦、咖哩螃蟹。接著排隊品嚐現炸泰式雙胞胎沾香蘭醬，以及熱騰騰炭烤爆漿麵包。
                             </p>
-                            <p class="text-xs text-neutral-600 font-light mt-1.5 bg-white p-3 rounded border border-neutral-100">
-                                🦐 <strong>必吃清單：</strong> 鎖定熱門大排檔 <a href="https://maps.google.com/?q=T%26K+Seafood+Chinatown+Bangkok" target="_blank" class="map-link">【T&K Seafood】</a>，痛快享用炭烤大頭蝦、咖哩螃蟹。隨後排隊品嚐米其林推薦的 <a href="https://maps.google.com/?q=Patonggo+Mae+Phlek+Chinatown" target="_blank" class="map-link">【Patonggo Mae Phlek】</a> 炸雙胞胎佐香蘭醬、以及炭烤爆漿奶油麵包。
+                        </div>
+                        <div>
+                            <span class="absolute -left-[5px] top-1.5 w-2 h-2 rounded-full bg-slate-300"></span>
+                            <span class="text-xs font-bold text-slate-500 bg-slate-100 px-2 py-0.5 rounded">21:30</span>
+                            <p class="font-bold text-slate-800 mt-1">輕鬆返回飯店</p>
+                            <p class="text-xs text-slate-500 font-light">
+                                步行至 MRT 地鐵 <a href="https://maps.google.com/?q=Wat+Mangkon+MRT+Station" target="_blank" class="map-link">龍蓮寺站 (Wat Mangkon)</a> 直接坐回 Sukhumvit 站，愜意走回飯店休息。
                             </p>
                         </div>
                     </div>
@@ -316,47 +319,43 @@
             </div>
 
             <!-- Day 3 -->
-            <div class="bg-white rounded-lg border border-[#EFEAE2] overflow-hidden transition-all duration-300">
-                <button onclick="toggleDay('day3')" class="w-full text-left p-6 flex items-center justify-between hover:bg-[#FAF6F0]/50 transition">
+            <div class="bg-white rounded-xl border border-slate-200/80 overflow-hidden shadow-sm">
+                <button onclick="toggleDay('day3')" class="w-full text-left p-5 flex items-center justify-between hover:bg-slate-50 transition">
                     <div class="flex items-center space-x-4">
-                        <div class="text-center bg-thaiGreen text-white px-3 py-1.5 rounded">
-                            <span class="block text-[10px] uppercase font-bold tracking-widest leading-none">Day</span>
-                            <span class="serif-title text-lg font-bold leading-none">03</span>
+                        <div class="bg-thaiBlue text-white font-bold px-3 py-1 rounded text-sm tracking-wider">
+                            DAY 3
                         </div>
                         <div>
-                            <h3 class="font-bold text-thaiDark text-base md:text-lg">6/20 (六) 週末限定巨型市集 → 浴缸充電中繼站 → 潮流夜市</h3>
-                            <p class="text-xs text-neutral-400 mt-0.5">活動：<a href="https://maps.google.com/?q=Chatuchak+Weekend+Market" target="_blank" onclick="event.stopPropagation();" class="map-link font-medium">恰圖恰週末市集</a>、<a href="https://maps.google.com/?q=Jodd+Fairs+Rama+9" target="_blank" onclick="event.stopPropagation();" class="map-link font-medium">喬德夜市</a></p>
+                            <h3 class="font-bold text-slate-800 text-base">6/20 (六) 恰圖恰白天小吃買爆 → 下午回房泡澡 → 晚上進攻喬德夜市</h3>
+                            <p class="text-xs text-slate-400 mt-0.5">景點：<a href="https://maps.google.com/?q=Chatuchak+Weekend+Market" target="_blank" onclick="event.stopPropagation();" class="map-link">恰圖恰週末市場</a>、<a href="https://maps.google.com/?q=Jodd+Fairs+Rama+9" target="_blank" onclick="event.stopPropagation();" class="map-link">喬德夜市</a></p>
                         </div>
                     </div>
-                    <span id="arrow-day3" class="text-thaiGold text-sm transition-transform transform">▼</span>
+                    <span id="arrow-day3" class="text-thaiBlue font-bold text-sm transition-transform transform">▼</span>
                 </button>
-                <div id="content-day3" class="hidden border-t border-neutral-100 bg-[#FAF6F0]/20 p-6 space-y-4 text-sm">
-                    <div class="relative pl-6 border-l border-thaiGold/30 space-y-5">
+                <div id="content-day3" class="hidden border-t border-slate-100 bg-slate-50/40 p-5 space-y-4 text-sm">
+                    <div class="relative pl-5 border-l-2 border-slate-200 space-y-4">
                         <div>
-                            <span class="absolute -left-[4.5px] top-1.5 w-2 h-2 rounded-full bg-thaiGold"></span>
-                            <span class="text-xs font-bold text-thaiGreen bg-emerald-50 px-2 py-0.5 rounded">09:30 - 13:30</span>
-                            <p class="font-semibold text-neutral-800 mt-1">極限大採購 · <a href="https://maps.google.com/?q=Chatuchak+Weekend+Market" target="_blank" class="map-link">恰圖恰週末市集 (Chatuchak)</a></p>
-                            <p class="text-xs text-neutral-600 font-light mt-1">
-                                從 BTS Asok 站直達 <a href="https://maps.google.com/?q=Mo+Chit+Station" target="_blank" class="map-link">Mo Chit 站</a>。邊逛工藝品、夏日度假服飾，邊補給經典椰子冰淇淋、濃郁蒜香麵包、手標泰式奶茶。
+                            <span class="absolute -left-[5px] top-1.5 w-2 h-2 rounded-full bg-thaiBlue"></span>
+                            <span class="text-xs font-bold text-thaiBlue bg-blue-50 px-2 py-0.5 rounded">09:30 - 13:30</span>
+                            <p class="font-bold text-slate-800 mt-1">【<a href="https://maps.google.com/?q=Chatuchak+Weekend+Market" target="_blank" class="map-link">恰圖恰週末市場 (Chatuchak Market)</a>】</p>
+                            <p class="text-xs text-slate-600 font-light mt-0.5">
+                                ⚠️ 恰圖恰非常大且熱，一定要早點去！從 BTS Asok 站一路直達 <a href="https://maps.google.com/?q=Mo+Chit+BTS+Station" target="_blank" class="map-link">Mo Chit 站</a>，出站即達。邊逛服飾邊享用椰子冰淇淋、手標泰奶、打拋豬肉飯，買齊度假風衣服。
                             </p>
                         </div>
                         <div>
-                            <span class="absolute -left-[4.5px] top-1.5 w-2 h-2 rounded-full bg-thaiGold"></span>
-                            <span class="text-xs font-bold text-rose-800 bg-rose-50 px-2 py-0.5 rounded">14:00 - 16:30</span>
-                            <p class="font-semibold text-rose-900 mt-1">✨ 頂級體貼調度：返房沖涼泡澡、完美歇息</p>
-                            <p class="text-xs text-neutral-600 font-light mt-1">
-                                逛完戶外市集必定大汗淋漓。此時特意調度返回 <a href="https://maps.google.com/?q=Rembrandt+Hotel+Bangkok+Sukhumvit" target="_blank" class="map-link">Rembrandt 飯店</a>，沖涼、泡進浴缸全然放鬆，小憩片刻重新梳妝，完美避開午後兩三點最摧毀妝容的烈日。
+                            <span class="absolute -left-[5px] top-1.5 w-2 h-2 rounded-full bg-thaiRed"></span>
+                            <span class="text-xs font-bold text-thaiRed bg-red-50 px-2 py-0.5 rounded">14:00 - 16:30</span>
+                            <p class="font-bold text-slate-900 mt-1">✨【極度重要：下午回房沖涼泡澡充電】</p>
+                            <p class="text-xs text-slate-600 font-light mt-0.5">
+                                逛完恰圖恰全身一定是汗、雙腿酸痛。搭捷運直回飯店，洗個冷水澡、泡進浴缸裡徹底放鬆。小憩片刻重新補妝，傍晚出門正好避開下午最毒辣的太陽！
                             </p>
                         </div>
                         <div>
-                            <span class="absolute -left-[4.5px] top-1.5 w-2 h-2 rounded-full bg-thaiGold"></span>
-                            <span class="text-xs font-bold text-thaiGreen bg-emerald-50 px-2 py-0.5 rounded">17:00 - 21:00</span>
-                            <p class="font-semibold text-neutral-800 mt-1">狂歡進攻 · <a href="https://maps.google.com/?q=Jodd+Fairs+Rama+9" target="_blank" class="map-link">喬德夜市 (Jodd Fairs Rama 9)</a></p>
-                            <p class="text-xs text-neutral-600 font-light mt-1">
-                                從 MRT Sukhumvit 站搭地鐵直達 <a href="https://maps.google.com/?q=Phra+Ram+9+MRT+Station" target="_blank" class="map-link">Phra Ram 9 站</a>，出站即達，絕不堵車。
-                            </p>
-                            <p class="text-xs text-neutral-600 font-light mt-1.5 bg-white p-3 rounded border border-neutral-100">
-                                🍖 <strong>爆吃指標：</strong> 享用視覺張力十足的<strong>火山排骨</strong>、香辣生醃醬蟹、現打水果冰沙。感受曼谷街頭最具活力的潮流夜生活。
+                            <span class="absolute -left-[5px] top-1.5 w-2 h-2 rounded-full bg-thaiBlue"></span>
+                            <span class="text-xs font-bold text-thaiBlue bg-blue-50 px-2 py-0.5 rounded">17:00 - 21:00</span>
+                            <p class="font-bold text-slate-800 mt-1">【<a href="https://maps.google.com/?q=Jodd+Fairs+Rama+9" target="_blank" class="map-link">喬德夜市 (Jodd Fairs Rama 9)</a>】</p>
+                            <p class="text-xs text-slate-600 font-light mt-0.5">
+                                從飯店旁的 MRT Sukhumvit 站坐地鐵到 <a href="https://maps.google.com/?q=Phra+Ram+9+MRT+Station" target="_blank" class="map-link">Phra Ram 9 站</a>，出站就是夜市，完全不塞車。主攻視覺震撼的<strong>火山排骨（酸辣帶勁）</strong>、生醃醬蟹生蝦、西瓜水果冰沙。
                             </p>
                         </div>
                     </div>
@@ -364,61 +363,43 @@
             </div>
 
             <!-- Day 4 -->
-            <div class="bg-white rounded-lg border border-[#EFEAE2] overflow-hidden transition-all duration-300">
-                <button onclick="toggleDay('day4')" class="w-full text-left p-6 flex items-center justify-between hover:bg-[#FAF6F0]/50 transition">
+            <div class="bg-white rounded-xl border border-slate-200/80 overflow-hidden shadow-sm">
+                <button onclick="toggleDay('day4')" class="w-full text-left p-5 flex items-center justify-between hover:bg-slate-50 transition">
                     <div class="flex items-center space-x-4">
-                        <div class="text-center bg-thaiGreen text-white px-3 py-1.5 rounded">
-                            <span class="block text-[10px] uppercase font-bold tracking-widest leading-none">Day</span>
-                            <span class="serif-title text-lg font-bold leading-none">04</span>
+                        <div class="bg-thaiBlue text-white font-bold px-3 py-1 rounded text-sm tracking-wider">
+                            DAY 4
                         </div>
                         <div>
-                            <h3 class="font-bold text-thaiDark text-base md:text-lg">6/21 (日) 市中心祈福 → 百貨伴手禮 → 奢華室內水上市場</h3>
-                            <p class="text-xs text-neutral-400 mt-0.5">景點：<a href="https://maps.google.com/?q=Erawan+Shrine+Bangkok" target="_blank" onclick="event.stopPropagation();" class="map-link font-medium">四面佛</a>、<a href="https://maps.google.com/?q=CentralwOrld" target="_blank" onclick="event.stopPropagation();" class="map-link font-medium">CentralwOrld</a>、<a href="https://maps.google.com/?q=ICONSIAM" target="_blank" onclick="event.stopPropagation();" class="map-link font-medium">IconSiam 暹羅天地</a></p>
+                            <h3 class="font-bold text-slate-800 text-base">6/21 (日) 四面佛祈福 → 百貨伴手禮 → Icon Siam 奢華冷氣水上市場</h3>
+                            <p class="text-xs text-slate-400 mt-0.5">行程點：<a href="https://maps.google.com/?q=Erawan+Shrine" target="_blank" onclick="event.stopPropagation();" class="map-link">四面佛</a>、<a href="https://maps.google.com/?q=CentralwOrld" target="_blank" onclick="event.stopPropagation();" class="map-link">CentralwOrld</a>、<a href="https://maps.google.com/?q=ICONSIAM" target="_blank" onclick="event.stopPropagation();" class="map-link">IconSiam</a></p>
                         </div>
                     </div>
-                    <span id="arrow-day4" class="text-thaiGold text-sm transition-transform transform">▼</span>
+                    <span id="arrow-day4" class="text-thaiBlue font-bold text-sm transition-transform transform">▼</span>
                 </button>
-                <div id="content-day4" class="hidden border-t border-neutral-100 bg-[#FAF6F0]/20 p-6 space-y-4 text-sm">
-                    <div class="relative pl-6 border-l border-thaiGold/30 space-y-5">
+                <div id="content-day4" class="hidden border-t border-slate-100 bg-slate-50/40 p-5 space-y-4 text-sm">
+                    <div class="relative pl-5 border-l-2 border-slate-200 space-y-4">
                         <div>
-                            <span class="absolute -left-[4.5px] top-1.5 w-2 h-2 rounded-full bg-thaiGold"></span>
-                            <span class="text-xs font-bold text-thaiGreen bg-emerald-50 px-2 py-0.5 rounded">11:00 - 12:00</span>
-                            <p class="font-semibold text-neutral-800 mt-1">虔誠祈福 · <a href="https://maps.google.com/?q=Erawan+Shrine+Bangkok" target="_blank" class="map-link">市中心四面佛 (Erawan Shrine)</a></p>
-                            <p class="text-xs text-neutral-600 font-light mt-1">
-                                搭乘 BTS 捷運直達 <a href="https://maps.google.com/?q=Chit+Lom+Station" target="_blank" class="map-link">Chit Lom 站</a>。順時針依次參拜：事業、感情、財運、健康。
+                            <span class="absolute -left-[5px] top-1.5 w-2 h-2 rounded-full bg-thaiBlue"></span>
+                            <span class="text-xs font-bold text-thaiBlue bg-blue-50 px-2 py-0.5 rounded">11:00 - 12:00</span>
+                            <p class="font-bold text-slate-800 mt-1">【<a href="https://maps.google.com/?q=Erawan+Shrine" target="_blank" class="map-link">四面佛參拜</a>】</p>
+                            <p class="text-xs text-slate-600 font-light mt-0.5">
+                                搭乘 BTS 捷運直達 <a href="https://maps.google.com/?q=Chit+Lom+BTS+Station" target="_blank" class="map-link">Chit Lom 站</a>。指南：順時針參拜，誠心祈求。
                             </p>
                         </div>
                         <div>
-                            <span class="absolute -left-[4.5px] top-1.5 w-2 h-2 rounded-full bg-thaiGold"></span>
-                            <span class="text-xs font-bold text-neutral-500 bg-neutral-100 px-2 py-0.5 rounded">12:00 - 15:00</span>
-                            <p class="font-semibold text-neutral-800 mt-1">網美雪綿冰與瘋狂大採買 · <a href="https://maps.google.com/?q=CentralwOrld" target="_blank" class="map-link">CentralwOrld</a></p>
-                            <p class="text-xs text-neutral-600 font-light mt-1">
-                                於市中心商圈與鄰近的 <a href="https://maps.google.com/?q=Big+C+Supercenter+Rajdamri" target="_blank" class="map-link">Big C 旗艦店</a> 橫掃零食伴手禮。下午茶指定拜訪知名連鎖甜點 <a href="https://maps.google.com/?q=After+You+Dessert+Cafe+Centralworld" target="_blank" class="map-link">【After You Dessert Cafe】</a>，品嚐頂級泰式奶茶雪綿冰。
+                            <span class="absolute -left-[5px] top-1.5 w-2 h-2 rounded-full bg-slate-300"></span>
+                            <span class="text-xs font-bold text-slate-500 bg-slate-100 px-2 py-0.5 rounded">12:00 - 15:00</span>
+                            <p class="font-bold text-slate-800 mt-1">【<a href="https://maps.google.com/?q=CentralwOrld" target="_blank" class="map-link">CentralwOrld</a> 伴手禮大採購】</p>
+                            <p class="text-xs text-slate-600 font-light mt-0.5">
+                                在百貨內超市或鄰近的 Big C 把伴手禮（小老大、媽媽麵、手標茶葉）一次掃齊。下午茶吃知名 【After You Dessert Cafe】 的泰奶雪綿冰！
                             </p>
                         </div>
                         <div>
-                            <span class="absolute -left-[4.5px] top-1.5 w-2 h-2 rounded-full bg-thaiGold"></span>
-                            <span class="text-xs font-bold text-neutral-400 bg-neutral-50 px-2 py-0.5 rounded">15:30 - 16:30</span>
-                            <p class="font-semibold text-neutral-800 mt-1">優雅中場：卸下行囊戰利品</p>
-                            <p class="text-xs text-neutral-500 font-light">先回飯店卸下沉重伴手禮，輕裝前往晚間極致饗宴。</p>
-                        </div>
-                        <div>
-                            <span class="absolute -left-[4.5px] top-1.5 w-2 h-2 rounded-full bg-thaiGold"></span>
-                            <span class="text-xs font-bold text-thaiGreen bg-emerald-50 px-2 py-0.5 rounded">17:30 - 21:30</span>
-                            <p class="font-semibold text-neutral-800 mt-1">貴婦級精緻室內市集 · <a href="https://maps.google.com/?q=ICONSIAM" target="_blank" class="map-link">IconSiam (暹羅天地)</a></p>
-                            <p class="text-xs text-neutral-600 font-light mt-1">
-                                坐捷運至 Saphan Taksin 站轉乘豪奢專屬接駁船抵達河畔 IconSiam 百貨。
-                            </p>
-                            <p class="text-xs text-neutral-600 font-light mt-1.5 bg-white p-3 rounded border border-neutral-100">
-                                🍧 <strong>奢華水上市場小吃：</strong> 直接前往一樓冷氣極強的 <a href="https://maps.google.com/?q=SOOKSIAM+ICONSIAM" target="_blank" class="map-link">【SOOKSIAM】</a> 專區。此處完美融合全泰各省經典街頭小吃（精緻泰式炒河粉、頂級芒果糯米飯、香味四溢烤串），環境無比潔淨衛生，免除路邊攤日曬之苦。
-                            </p>
-                        </div>
-                        <div>
-                            <span class="absolute -left-[4.5px] top-1.5 w-2 h-2 rounded-full bg-thaiGold"></span>
-                            <span class="text-xs font-bold text-thaiDark bg-amber-100/60 px-2 py-0.5 rounded">21:30 ~ 深夜</span>
-                            <p class="font-semibold text-neutral-800 mt-1">舒壓泰式按摩與驚喜小吃</p>
-                            <p class="text-xs text-neutral-600 font-light">
-                                返抵 Asok 飯店周邊，預約一流的按摩館進行足底舒壓（Foot Massage）。最後外帶路邊香噴噴的泰式烤豬肉串回放鬆回味，為最後一晚劃下完美句點。
+                            <span class="absolute -left-[5px] top-1.5 w-2 h-2 rounded-full bg-thaiBlue"></span>
+                            <span class="text-xs font-bold text-thaiBlue bg-blue-50 px-2 py-0.5 rounded">17:30 - 21:30</span>
+                            <p class="font-bold text-slate-800 mt-1">【<a href="https://maps.google.com/?q=ICONSIAM" target="_blank" class="map-link">IconSiam (暹羅天地)</a> 奢華冷氣市集】</p>
+                            <p class="text-xs text-slate-600 font-light mt-1 bg-white p-3 rounded border border-slate-200/60">
+                                🍧 <strong>吃貨亮點：</strong> 一樓的室內水上市場非常乾淨、有冷氣。集中了全泰國小吃（泰式炒河粉、芒果糯米飯）。舒舒服服、優雅地吃爆美食，欣賞窗外昭披耶河夜景。
                             </p>
                         </div>
                     </div>
@@ -426,41 +407,27 @@
             </div>
 
             <!-- Day 5 -->
-            <div class="bg-white rounded-lg border border-rose-200 overflow-hidden transition-all duration-300">
-                <button onclick="toggleDay('day5')" class="w-full text-left p-6 flex items-center justify-between hover:bg-rose-50/20 transition">
+            <div class="bg-white rounded-xl border border-red-200 overflow-hidden shadow-sm">
+                <button onclick="toggleDay('day5')" class="w-full text-left p-5 flex items-center justify-between hover:bg-red-50/20 transition">
                     <div class="flex items-center space-x-4">
-                        <div class="text-center bg-rose-600 text-white px-3 py-1.5 rounded">
-                            <span class="block text-[10px] uppercase font-bold tracking-widest leading-none">Day</span>
-                            <span class="serif-title text-lg font-bold leading-none">05</span>
+                        <div class="bg-thaiRed text-white font-bold px-3 py-1 rounded text-sm tracking-wider">
+                            DAY 5
                         </div>
                         <div>
-                            <h3 class="font-bold text-neutral-800 text-base md:text-lg">6/22 (一) 拂曉出發 → 告別暹羅 滿載返台</h3>
-                            <p class="text-xs text-rose-600 mt-0.5">⚠️ 嚴格動線：<span class="font-medium">05:40 飯店準時離場</span></p>
+                            <h3 class="font-bold text-slate-800 text-base">6/22 (一) 清晨出發 → 快樂返台</h3>
+                            <p class="text-xs text-thaiRed font-medium">🚨 交通防遲到鐵律：<span class="underline">05:40 必須出發</span></p>
                         </div>
                     </div>
-                    <span id="arrow-day5" class="text-rose-500 text-sm transition-transform transform">▼</span>
+                    <span id="arrow-day5" class="text-thaiRed font-bold text-sm transition-transform transform">▼</span>
                 </button>
-                <div id="content-day5" class="hidden border-t border-rose-100 bg-rose-50/10 p-6 space-y-4 text-sm">
-                    <div class="relative pl-6 border-l border-rose-300 space-y-4">
+                <div id="content-day5" class="hidden border-t border-red-100 bg-red-50/10 p-5 space-y-4 text-sm">
+                    <div class="relative pl-5 border-l-2 border-red-300 space-y-3">
                         <div>
-                            <span class="absolute -left-[4.5px] top-1.5 w-2 h-2 rounded-full bg-rose-500"></span>
-                            <span class="text-xs font-bold text-neutral-600 bg-neutral-200 px-2 py-0.5 rounded">05:30</span>
-                            <p class="font-semibold text-neutral-800 mt-1">清晨準時喚醒、Check-out 退房</p>
-                        </div>
-                        <div>
-                            <span class="absolute -left-[4.5px] top-1.5 w-2 h-2 rounded-full bg-rose-500"></span>
-                            <span class="text-xs font-bold text-rose-800 bg-rose-100 px-2 py-0.5 rounded">05:40 - 06:15</span>
-                            <p class="font-semibold text-rose-900 mt-1">【退房鐵律：清晨閃電赴機場】</p>
-                            <p class="text-xs text-neutral-600 font-light mt-0.5">
-                                由於係 <strong>09:10</strong> 起飛之國際航班，規定需提早 3 小時抵達。清晨無捷運，<strong>務必於前晚委請櫃檯叫妥計程車，或清晨五點半準時開啟 Grab App 呼叫。</strong> 清晨路況極佳，約 25 分鐘直達機場。
-                            </p>
-                        </div>
-                        <div>
-                            <span class="absolute -left-[4.5px] top-1.5 w-2 h-2 rounded-full bg-rose-500"></span>
-                            <span class="text-xs font-bold text-neutral-500 bg-neutral-200 px-2 py-0.5 rounded">06:15 - 09:10</span>
-                            <p class="font-semibold text-neutral-800 mt-1">機場免稅店巡禮與登機</p>
-                            <p class="text-xs text-neutral-600 font-light">
-                                於 <a href="https://maps.google.com/?q=Suvarnabhumi+Airport+BKK" target="_blank" class="map-link">蘇凡納布機場 (BKK)</a> 辦理登機與託運，可在免稅店進行最終大補貨，或於 Magic Food Point 機場平價美食街補給美味早餐。登機起飛，安全返回台北。
+                            <span class="absolute -left-[5px] top-1.5 w-2 h-2 rounded-full bg-thaiRed"></span>
+                            <span class="text-xs font-bold text-thaiRed bg-red-50 px-2 py-0.5 rounded">05:40 - 06:15</span>
+                            <p class="font-bold text-slate-800 mt-1">【清晨閃電奔赴機場】</p>
+                            <p class="text-xs text-slate-600 font-light mt-0.5">
+                                早上 09:10 的班機，國際線強烈建議提前 3 小時（06:10）到達機場。<strong>請務必在前一天晚上請飯店櫃檯幫忙預約好計程車，或清晨 05:30 直接用 Grab 叫車。</strong>
                             </p>
                         </div>
                     </div>
@@ -468,50 +435,50 @@
             </div>
         </section>
 
-        <!-- Section 4: Budget Estimates Summary Table (Luxury Magazine Style) -->
-        <section class="editorial-card rounded-xl overflow-hidden">
-            <div class="bg-thaiGreen text-white px-6 py-4.5">
-                <h2 class="serif-title text-lg font-medium tracking-wide">五日核心行程與動線總覽</h2>
+        <!-- Section 4: Budget & Route Summary Table -->
+        <section class="bg-white rounded-xl border border-slate-200/80 overflow-hidden shadow-sm">
+            <div class="bg-thaiBlue text-white px-6 py-4">
+                <h2 class="font-bold text-base md:text-lg tracking-wide">📊 5 天 4 夜核心行程與費用預估總覽</h2>
             </div>
             <div class="overflow-x-auto">
                 <table class="w-full text-left border-collapse text-sm">
                     <thead>
-                        <tr class="bg-[#FAF6F0] text-thaiGreenLight border-b border-neutral-100 font-bold">
-                            <th class="p-4 font-semibold">日期</th>
-                            <th class="p-4 font-semibold">度假行程重點</th>
-                            <th class="p-4 font-semibold">建議交通手段</th>
-                            <th class="p-4 font-semibold">推薦特色美食</th>
+                        <tr class="bg-slate-50 text-thaiBlue border-b border-slate-100 font-bold">
+                            <th class="p-4">日期</th>
+                            <th class="p-4">度假行程重點</th>
+                            <th class="p-4">建議交通手段</th>
+                            <th class="p-4">推薦特色小吃</th>
                         </tr>
                     </thead>
-                    <tbody class="divide-y divide-neutral-100 text-neutral-600 font-light">
-                        <tr class="hover:bg-amber-50/10 transition">
-                            <td class="p-4 font-medium text-thaiClay whitespace-nowrap">6/18 (四)</td>
-                            <td class="p-4">深夜安抵曼谷、Check-in、浴缸舒壓</td>
+                    <tbody class="divide-y divide-slate-100 text-slate-600 font-light">
+                        <tr class="hover:bg-slate-50/50 transition">
+                            <td class="p-4 font-bold text-thaiRed whitespace-nowrap">6/18 (四)</td>
+                            <td class="p-4">深夜安抵曼谷、Check-in、放鬆泡澡</td>
                             <td class="p-4">機場計程車 / Grab (約 THB 400)</td>
-                            <td class="p-4">7-11 熱壓吐司、限定燕窩</td>
+                            <td class="p-4">7-11 熱壓吐司、經典燕窩</td>
                         </tr>
-                        <tr class="hover:bg-amber-50/10 transition">
-                            <td class="p-4 font-medium text-thaiClay whitespace-nowrap">6/19 (五)</td>
-                            <td class="p-4 text-neutral-800">鄭王廟華麗泰服寫真、唐人街霓虹海鮮</td>
+                        <tr class="hover:bg-slate-50/50 transition">
+                            <td class="p-4 font-bold text-thaiRed whitespace-nowrap">6/19 (五)</td>
+                            <td class="p-4 text-slate-800 font-medium">鄭王廟古典泰服拍照、唐人街霓虹海鮮</td>
                             <td class="p-4">捷運 + 昭披耶河觀光接駁船</td>
-                            <td class="p-4">T&K Seafood 炭烤大蝦、現炸香蘭醬雙胞胎</td>
+                            <td class="p-4">T&K Seafood 烤大蝦、爆漿麵包</td>
                         </tr>
-                        <tr class="hover:bg-amber-50/10 transition">
-                            <td class="p-4 font-medium text-thaiClay whitespace-nowrap">6/20 (六)</td>
-                            <td class="p-4 text-neutral-800">恰圖恰週末大採購、回房沖涼充電、喬德夜市</td>
-                            <td class="p-4">BTS 捷運直達 / MRT 地鐵直達</td>
-                            <td class="p-4">火山排骨、香辣生醃醬蟹、手標泰奶</td>
+                        <tr class="hover:bg-slate-50/50 transition">
+                            <td class="p-4 font-bold text-thaiRed whitespace-nowrap">6/20 (六)</td>
+                            <td class="p-4 text-slate-800 font-medium">恰圖恰週末市場大採購、晚上進攻喬德夜市</td>
+                            <td class="p-4">捷運直達 (約 THB 120)</td>
+                            <td class="p-4">火山排骨、生醃醬蟹、手標泰奶</td>
                         </tr>
-                        <tr class="hover:bg-amber-50/10 transition">
-                            <td class="p-4 font-medium text-thaiClay whitespace-nowrap">6/21 (日)</td>
-                            <td class="p-4 text-neutral-800">四面佛祈福、伴手禮採買、IconSiam 水上市場</td>
-                            <td class="p-4">BTS + 奢華百貨專屬河畔接駁船</td>
-                            <td class="p-4">After You 泰奶雪綿冰、SOOKSIAM 室內小吃</td>
+                        <tr class="hover:bg-slate-50/50 transition">
+                            <td class="p-4 font-bold text-thaiRed whitespace-nowrap">6/21 (日)</td>
+                            <td class="p-4 text-slate-800 font-medium">四面佛祈福、商圈伴手禮、IconSiam 水上市場</td>
+                            <td class="p-4">捷運 + 百貨專屬河畔接駁船</td>
+                            <td class="p-4">After You 泰奶雪綿冰</td>
                         </tr>
-                        <tr class="bg-rose-50/20 text-neutral-700">
-                            <td class="p-4 font-medium text-rose-700 whitespace-nowrap">6/22 (一)</td>
-                            <td class="p-4">05:40 準時赴機場、告別曼谷返台</td>
-                            <td class="p-4 text-rose-700 font-medium">前晚預約排班計程車 / Grab 直奔</td>
+                        <tr class="bg-red-50/30 text-slate-700">
+                            <td class="p-4 font-bold text-thaiRed whitespace-nowrap">6/22 (一)</td>
+                            <td class="p-4">06:10 準時抵達機場、快樂起飛返台</td>
+                            <td class="p-4 text-thaiRed font-medium">前晚預約排班計程車 / Grab</td>
                             <td class="p-4">BKK 機場平價美食街 Magic Food</td>
                         </tr>
                     </tbody>
@@ -520,13 +487,13 @@
         </section>
     </main>
 
-    <!-- Refined Minimalist Footer -->
-    <footer class="text-center py-12 text-xs text-neutral-400 border-t border-neutral-200 bg-white/60">
-        <p class="tracking-wide serif-title italic text-thaiGoldDark text-sm mb-2">Have a breathtakingly romantic journey, Jenny & Bruce!</p>
-        <p class="font-light">🌴 願五天的暹羅優雅之旅，為您留下最絢麗溫馨的仲夏回憶。 Kop Khun Ka!</p>
+    <!-- Footer -->
+    <footer class="text-center py-10 text-xs text-slate-400 bg-white border-t border-slate-200">
+        <p class="font-bold text-thaiBlue text-sm mb-1 tracking-wide">Have a beautiful tropical vacation, Jenny & Bruce!</p>
+        <p class="font-light">🌴 願泰國五日之行平安順遂、甜蜜滿分。 Kop Khun Ka!</p>
     </footer>
 
-    <!-- Interactive Script for Collapsible Sections -->
+    <!-- Script -->
     <script>
         function toggleDay(dayId) {
             const content = document.getElementById('content-' + dayId);
